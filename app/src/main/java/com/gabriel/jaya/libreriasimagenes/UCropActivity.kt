@@ -24,7 +24,7 @@ class UCropActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ucrop)
-        title = "Libreria uCrop"
+        title = "Librería uCrop"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val btnSelectImage: Button = findViewById(R.id.btnSelectImageUCrop)

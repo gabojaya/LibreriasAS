@@ -20,7 +20,7 @@ class GlideActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_glide)
-        title = "Libreria Glide"
+        title = "Librería Glide"
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val btnSelectImage: Button = findViewById(R.id.btnSelectImageGlide)

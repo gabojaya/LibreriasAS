@@ -30,8 +30,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="Imagen original seleccionada por el usuario" />
+            android:scaleType="fitCenter" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,8 +45,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="Imagen transformada con Glide"/>
+            android:scaleType="fitCenter"/>
 
     </LinearLayout>
 
