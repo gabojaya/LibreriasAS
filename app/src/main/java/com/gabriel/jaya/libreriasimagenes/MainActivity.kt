@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        title = "Menú Principal"
 
         val btnGlide: Button = findViewById(R.id.btnGlide)
         val btnUCrop: Button = findViewById(R.id.btnUCrop)

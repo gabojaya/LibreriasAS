@@ -19,7 +19,8 @@ class GpuImageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gpu_image)
-        title = "Demo de GPUImage"
+        title = "Libreria GPUImage"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         gpuImageView = findViewById(R.id.gpuImageView)
         seekBar = findViewById(R.id.seekBar)

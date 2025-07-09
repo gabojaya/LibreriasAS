@@ -17,25 +17,30 @@ import java.io.File
 
 class UCropActivity : AppCompatActivity() {
 
-
     private lateinit var imagePickerLauncher: ActivityResultLauncher<String>
+    private lateinit var imageViewOriginal: ImageView
     private lateinit var imageViewResult: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ucrop)
+        title = "Libreria uCrop"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        title = "Demo de uCrop"
-
-        val btnSelectImage: Button = findViewById(R.id.btnSelectImage)
-        imageViewResult = findViewById(R.id.imageViewResult)
+        val btnSelectImage: Button = findViewById(R.id.btnSelectImageUCrop)
+        imageViewOriginal = findViewById(R.id.imageViewOriginalUCrop)
+        imageViewResult = findViewById(R.id.imageViewResultUCrop)
 
         imagePickerLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-            uri?.let {
-                startCrop(it)
+            uri?.let { selectedUri ->
+                imageViewOriginal.setImageURI(selectedUri)
+                startCrop(selectedUri)
             }
         }
+
         btnSelectImage.setOnClickListener {
+            imageViewOriginal.setImageDrawable(null)
+            imageViewResult.setImageDrawable(null)
             imagePickerLauncher.launch("image/*")
         }
     }

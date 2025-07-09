@@ -42,7 +42,7 @@
             android:id="@+id/btnGpuImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. GpuImage" />
+            android:text="3. GpuImage (Filtros de imagen)" />
 
     </LinearLayout>
 

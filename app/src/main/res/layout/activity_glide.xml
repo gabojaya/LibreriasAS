@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GlideActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:padding="16dp"
+        android:fitsSystemWindows="true"
         tools:context=".GlideActivity">
+
+
+        <Button
+            android:id="@+id/btnSelectImageGlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Imagen"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glide: Carga y Transformación"
-            android:textSize="20sp"
-            android:layout_marginBottom="16dp"/>
+            android:text="Imagen Original"
+            android:textStyle="bold"/>
 
         <ImageView
-            android:id="@+id/imageViewGlide"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:contentDescription="Imagen cargada con Glide"
-            android:scaleType="centerCrop"/>
+            android:id="@+id/imageViewOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Imagen original seleccionada por el usuario" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Imagen Transformada con Glide (Círculo)"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageViewTransformed"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Imagen transformada con Glide"/>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
