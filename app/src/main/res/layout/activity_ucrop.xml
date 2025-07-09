@@ -10,18 +10,18 @@
         android:fitsSystemWindows="true"
         tools:context=".UCropActivity">
 
-        <Button
-            android:id="@+id/btnSelectImageUCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seleccionar Imagen para Recortar"
-            android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btnSelectImageUCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/textoUCropSeleccionar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Imagen Original"
-            android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textoUCropOriginal"
+        android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageViewOriginalUCrop"
@@ -32,12 +32,12 @@
             android:scaleType="fitCenter"
             android:contentDescription="Imagen original antes de recortar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Imagen Recortada con uCrop"
-            android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textoUCropRecortado"
+        android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageViewResultUCrop"

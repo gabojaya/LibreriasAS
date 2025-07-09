@@ -11,18 +11,18 @@
         tools:context=".GlideActivity">
 
 
-        <Button
-            android:id="@+id/btnSelectImageGlide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seleccionar Imagen"
-            android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btnSelectImageGlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/textoGlideSeleccionar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Imagen Original"
-            android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textoGlideOriginal"
+        android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageViewOriginal"
@@ -33,12 +33,12 @@
             android:scaleType="fitCenter"
             android:contentDescription="Imagen original seleccionada por el usuario" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Imagen Transformada con Glide (Círculo)"
-            android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textoGlideTransformado"
+        android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageViewTransformed"

@@ -10,13 +10,13 @@
         android:fitsSystemWindows="true"
         tools:context=".GpuImageActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GPUImage: Filtros de Imagen"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/textoGpuImage"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
         <jp.co.cyberagent.android.gpuimage.GPUImageView
             android:id="@+id/gpuImageView"
@@ -25,20 +25,20 @@
             android:layout_weight="1"
             android:layout_gravity="center" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Selecciona un filtro:"
-            android:layout_marginTop="16dp"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="100" />
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:max="100" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textoBotonSeleccionar" />
 
-        <HorizontalScrollView
+    <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp">
@@ -52,31 +52,35 @@
                     android:id="@+id/btnFilterNone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Normal"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/txtNormal" />
+
                 <Button
                     android:id="@+id/btnFilterSepia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sepia"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/txtSepia" />
+
                 <Button
                     android:id="@+id/btnFilterGrayscale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Grises"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/txtGrises" />
+
                 <Button
                     android:id="@+id/btnFilterVignette"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Viñeta"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/txtVineta" />
+
                 <Button
                     android:id="@+id/btnFilterInvert"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Invertir" />
+                    android:text="@string/txtInvertir" />
             </LinearLayout>
         </HorizontalScrollView>
 

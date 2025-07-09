@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">LibreriasImagenes</string>
+    <string name="tituloMain">Librerías de Imágenes</string>
+    <string name="textoBotonGlide">1. Glide (Carga y Transformación)</string>
+    <string name="textoBotonUCrop">2. uCrop (Recorte de Imagen)</string>
+    <string name="textoBotonGpuImage">3. GpuImage (Filtros de imagen)</string>
+    <string name="textoGlideSeleccionar">Seleccionar Imagen</string>
+    <string name="textoGlideOriginal">Imagen Original</string>
+    <string name="textoGlideTransformado">Imagen Transformada con Glide (Círculo)</string>
+    <string name="textoUCropSeleccionar">Seleccionar Imagen para Recortar</string>
+    <string name="textoUCropOriginal">Imagen Original</string>
+    <string name="textoUCropRecortado">Imagen Recortada con uCrop</string>
+    <string name="textoGpuImage">GPUImage: Filtros de Imagen</string>
+    <string name="textoBotonSeleccionar">Selecciona un filtro:</string>
+    <string name="txtNormal">Normal</string>
+    <string name="txtSepia">Sepia</string>
+    <string name="txtGrises">Grises</string>
+    <string name="txtVineta">Viñeta</string>
+    <string name="txtInvertir">Invertir</string>
 </resources>

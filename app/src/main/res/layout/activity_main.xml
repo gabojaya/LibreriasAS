@@ -19,30 +19,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Librerías de Imágenes"
+            android:layout_marginBottom="32dp"
+            android:text="@string/tituloMain"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="32dp"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnGlide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Glide (Carga y Transformación)"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/textoBotonGlide" />
 
         <Button
             android:id="@+id/btnUCrop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. uCrop (Recorte de Imagen)"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="@string/textoBotonUCrop" />
 
         <Button
             android:id="@+id/btnGpuImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. GpuImage (Filtros de imagen)" />
+            android:text="@string/textoBotonGpuImage" />
 
     </LinearLayout>
 
